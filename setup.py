@@ -41,6 +41,7 @@ INSTALL_REQUIRES = [
     'docutils',
     'sphinx',
     'openpyxl',
+    'jinja2',
 ]
 
 
