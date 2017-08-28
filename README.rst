@@ -1,4 +1,5 @@
-# sphinxcontrib-excel-reader
+sphinxcontrib-excel-reader
+==========================
 
 An sphinx extension to render an excel table as an excel-alike table in Sphinx documentation.
 
