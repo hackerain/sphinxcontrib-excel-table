@@ -1,4 +1,5 @@
-# sphinxcontrib-excel-table
+sphinxcontrib-excel-table
+=========================
 
 The sphinxcontrib-excel-table extension is to render an excel file as an excel-alike table in Sphinx documentation.
 
@@ -11,7 +12,8 @@ support the following features:
 * display specific section in one sheet
 * display specific rows in one sheet
 
-## Installation
+Installation
+------------
 
 You can install it via pip:
 
@@ -27,7 +29,8 @@ $ cd sphinxcontrib-excel-table
 $ python setup.py install
 ```
 
-## Setup
+Setup
+-----
 
 Add sphinxcontrib.excel_table to your conf.py file:
 
@@ -43,7 +46,8 @@ resources/_static/handsontable.full.min.js
 resources/_static/handsontable.full.min.css
 ```
 
-## Usage
+Usage
+-----
 
 Here is the syntax to present your excel file in sphinx documentation:
 
@@ -54,11 +58,12 @@ Here is the syntax to present your excel file in sphinx documentation:
 
 This will translate to:
 
-![Spninx Excel Table](sphinx_excel_table.png)
+.. image:: sphinx_excel_table.png
 
 As you can see, it supports merged cells, and this is the mainly goal this contrib will achieve, because other sphinxcontrib excel extensions don't support this feature, and are not convenient to implement it. The sphinxcontrib-excel-table can do this easily using openpyxl library.
 
-## Options
+Options
+-------
 
 This sphinxcontrib provides the following options:
 
