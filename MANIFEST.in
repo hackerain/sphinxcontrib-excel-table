@@ -1,2 +1,4 @@
 include README.rst
 include CHANGELOG.rst
+include sphinxcontrib/templates/*.html
+include resources/*
