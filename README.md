@@ -52,7 +52,7 @@ Here is the syntax to present your excel file in sphinx documentation:
    :file: path/to/file.xlsx
 ```
 
-This will translated to:
+This will translate to:
 
 ![Spninx Excel Table](sphinx_excel_table.png)
 
