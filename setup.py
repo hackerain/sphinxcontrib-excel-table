@@ -6,7 +6,7 @@ PY26 = PY2 and sys.version_info[1] < 7
 
 NAME = 'sphinxcontrib-excel-table'
 AUTHOR = 'Guangyu Suo'
-VERSION = '0.0.2'
+VERSION = '0.0.3'
 EMAIL = 'yugsuo@gmail.com'
 LICENSE = 'Apache License'
 DESCRIPTION = (
@@ -14,7 +14,7 @@ DESCRIPTION = (
     ''
 )
 URL = 'https://github.com/hackerain/sphinxcontrib-excel-table'
-DOWNLOAD_URL = '%s/archive/0.0.2.tar.gz' % URL
+DOWNLOAD_URL = '%s/archive/0.0.3.tar.gz' % URL
 FILES = ['README.rst', 'CHANGELOG.rst']
 KEYWORDS = [
     'python',
