@@ -17,44 +17,40 @@ Installation
 
 You can install it via pip:
 
-```
-$ pip install sphinxcontrib-excel-table
-```
+.. code-block:: bash
+
+    $ pip install sphinxcontrib-excel-table
 
 or install it from source code:
 
-```
-$ git clone https://github.com/hackerain/sphinxcontrib-excel-table.git
-$ cd sphinxcontrib-excel-table
-$ python setup.py install
-```
+.. code-block:: bash
+
+    $ git clone https://github.com/hackerain/sphinxcontrib-excel-table.git
+    $ cd sphinxcontrib-excel-table
+    $ python setup.py install
 
 Setup
 -----
 
-Add sphinxcontrib.excel_table to your conf.py file:
+Add sphinxcontrib.excel_table to your conf.py file::
 
-```
-extensions = ['sphinxcontrib.excel_table']
-```
+    extensions = ['sphinxcontrib.excel_table']
 
-And you will need to copy a few resource files to your sphinx source directory:
+And you will need to copy a few resource files to your sphinx source directory::
 
-```
-resources/_templates/layout.html
-resources/_static/handsontable.full.min.js
-resources/_static/handsontable.full.min.css
-```
+    resources/_templates/layout.html
+    resources/_static/handsontable.full.min.js
+    resources/_static/handsontable.full.min.css
 
 Usage
 -----
 
 Here is the syntax to present your excel file in sphinx documentation:
 
-```
-.. excel-table::
-   :file: path/to/file.xlsx
-```
+.. code-block::
+
+    .. excel-table::
+       :file: path/to/file.xlsx
 
 This will translate to:
 
@@ -71,20 +67,20 @@ This sphinxcontrib provides the following options:
 
 Relative path (based on document) to excel documentation. Note that as openpyxl only supports excel xlsx/xlsm/xltx/xltm files, so this contrib doesn't support other old excel file formats like xls.
 
-```
-.. excel-table::
-   :file: path/to/file.xlsx
-```
+.. code-block::
+
+    .. excel-table::
+       :file: path/to/file.xlsx
 
 **sheet (optional)**
 
 Specify the name of the sheet to dispaly, if not given, it will default to the first sheet in the excel file.
 
-```
-.. excel-table::
-   :file: path/to/file.xlsx
-   :sheet: Sheet2
-```
+.. code-block::
+
+    .. excel-table::
+       :file: path/to/file.xlsx
+       :sheet: Sheet2
 
 Note this contrib can only display one sheet in one excel-table directive, but you can display different sheet in one excel in different directives.
 
@@ -92,32 +88,32 @@ Note this contrib can only display one sheet in one excel-table directive, but y
 
 Specify the row range of one sheet do display, the default is to display all rows in one sheet, if you use this option, remember to specify a range seperated by a colon.
 
-```
-.. excel-table::
-   :file: path/to/file.xlsx
-   :rows: 1:10
-```
+.. code-block::
+
+    .. excel-table::
+       :file: path/to/file.xlsx
+       :rows: 1:10
 
 **selection (optional)**
 
 Selection defines from and to the selection reaches. If value is not defined, the whole data from sheet is taken into table. And if selection is used, it must specify the from and to range seperated by a colon.
 
-```
-.. excel-table::
-   :file: path/to/file.xlsx
-   :selection: A1:D10
-```
+.. code-block::
+
+    .. excel-table::
+       :file: path/to/file.xlsx
+       :selection: A1:D10
 
 **overflow (optional)**
 
 Prevents table to overlap outside the parent element. If 'horizontal' option is chosen then table will appear horizontal
 scrollbar in case where parent's width is narrower then table's width. The default is 'horizontal', if you want to disable this feature, you can set false to this option.
 
-```
-.. excel-table::
-   :file: path/to/file.xlsx
-   :overflow: false
-```
+.. code-block::
+
+    .. excel-table::
+       :file: path/to/file.xlsx
+       :overflow: false
 
 **colwidths (optional)**
 
@@ -125,8 +121,8 @@ Defines column widths in pixels. Accepts number, string (that will be converted 
 array of numbers (if you want to define column width separately for each column) or a
 function (if you want to set column width dynamically on each render). The default value is undefined, means the width will be determined by the parent elements.
 
-```
-.. excel-table::
-   :file: path/to/file.xlsx
-   :colwidths: 100
-```
+.. code-block::
+
+    .. excel-table::
+       :file: path/to/file.xlsx
+       :colwidths: 100
