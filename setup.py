@@ -4,7 +4,7 @@ import sys
 PY2 = sys.version_info[0] == 2
 PY26 = PY2 and sys.version_info[1] < 7
 
-NAME = 'sphinxcontrib-excel-reader'
+NAME = 'sphinxcontrib-excel-table'
 AUTHOR = 'Guangyu Suo'
 VERSION = '0.0.1'
 EMAIL = 'yugsuo@gmail.com'
@@ -13,7 +13,7 @@ DESCRIPTION = (
     'Embed excel file as an excel-alike table into sphinx documentation.' +
     ''
 )
-URL = 'https://github.com/hackerain/sphinxcontrib-excel-reader'
+URL = 'https://github.com/hackerain/sphinxcontrib-excel-table'
 DOWNLOAD_URL = '%s/archive/0.0.1.tar.gz' % URL
 FILES = ['README.rst', 'CHANGELOG.rst']
 KEYWORDS = [

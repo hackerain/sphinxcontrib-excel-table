@@ -1,18 +1,15 @@
-<div id="example"></div>
+<div id="excel-{{file_name}}-sheet-{{sheet_name}}"></div>
 <script>
-    var data = function () {
-        return Handsontable.helper.createSpreadsheetData(100, 10);
-    };
-
-    var container = document.getElementById('example');
-
+    var container = document.getElementById('excel-{{file_name}}-sheet-{{sheet_name}}');
     var hot = new Handsontable(container, {
-    data: data(),
-    minSpareCols: 1,
-    minSpareRows: 1,
+    data: {{content}},
+    preventOverflow: {{overflow}},
     rowHeaders: true,
     colHeaders: true,
-    contextMenu: true,
-    readOnly: true
+    readOnly: true,
+    colWidths: {{colwidths}},
+    manualColumnResize: true,
+    manualRowResize: true,
+    mergeCells: {{merged_cells}}
     });
 </script>
