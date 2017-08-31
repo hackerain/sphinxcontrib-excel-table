@@ -1,6 +1,6 @@
 # sphinxcontrib-excel-table
 
-A sphinx extension to render an excel table as an excel-alike table in Sphinx documentation.
+The sphinxcontrib-excel-table extension is to render an excel file as an excel-alike table in Sphinx documentation.
 
 This contrib is inspired by sphinxcontrib-excel, which uses pyexcel and handsontable to do the
 work, but the sphinxcontrib-excel-table will instead use openpyxl and handsontable, mainly to
