@@ -56,7 +56,7 @@ This will translate to:
 
 ![Spninx Excel Table](sphinx_excel_table.png)
 
-As you can see, it supports merged cells, and this is the mainly goal this contrib will achieve, because other sphinxcontrib excel extensions don't support this feature, and are not convenient to implement it. The sphinxcontrib-excel-table can to this easily using openpyxl library.
+As you can see, it supports merged cells, and this is the mainly goal this contrib will achieve, because other sphinxcontrib excel extensions don't support this feature, and are not convenient to implement it. The sphinxcontrib-excel-table can do this easily using openpyxl library.
 
 ## Options
 
