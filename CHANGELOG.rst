@@ -5,3 +5,8 @@ Change log
 -----
 
 First version
+
+0.0.4
+-----
+
+Second version
