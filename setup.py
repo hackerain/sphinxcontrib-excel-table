@@ -14,7 +14,7 @@ DESCRIPTION = (
     ''
 )
 URL = 'https://github.com/hackerain/sphinxcontrib-excel-table'
-DOWNLOAD_URL = '%s/archive/0.0.5.tar.gz' % URL
+DOWNLOAD_URL = '%s/archive/%s.tar.gz' % (URL, VERSION)
 FILES = ['README.rst', 'CHANGELOG.rst']
 KEYWORDS = [
     'python',
