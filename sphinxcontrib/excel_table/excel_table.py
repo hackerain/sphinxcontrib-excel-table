@@ -155,8 +155,3 @@ class ExcelTable(Directive):
         template = _env.get_template('table.html')
         html = template.render(**data)
         return [docutils.nodes.raw('', html, format='html')]
-
-
-def setup(app):
-    app.add_directive('excel-table', ExcelTable)
-    return {'version': '0.0.1'}

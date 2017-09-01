@@ -1,5 +1,5 @@
 include README.rst
 include CHANGELOG.rst
-include sphinxcontrib/templates/*.html
-include sphinxcontrib/resources/_static/*
-include sphinxcontrib/resources/_templates/*
+include sphinxcontrib/excel_table/templates/*.html
+include sphinxcontrib/excel_table/resources/_static/*
+include sphinxcontrib/excel_table/resources/_templates/*
