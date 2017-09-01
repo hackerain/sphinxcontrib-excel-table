@@ -6,7 +6,7 @@ PY26 = PY2 and sys.version_info[1] < 7
 
 NAME = 'sphinxcontrib-excel-table'
 AUTHOR = 'Guangyu Suo'
-VERSION = '0.0.8'
+VERSION = '0.0.9'
 EMAIL = 'yugsuo@gmail.com'
 LICENSE = 'Apache License'
 DESCRIPTION = (
