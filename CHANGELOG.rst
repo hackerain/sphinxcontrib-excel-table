@@ -10,3 +10,8 @@ First version
 -----
 
 Second version
+
+1.0.0
+-----
+
+* Refactor the code to one folder

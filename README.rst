@@ -38,13 +38,18 @@ Add sphinxcontrib.excel_table to your conf.py file::
 
 And you need to copy the resource files to your sphinx source directory, the resource files
 has been installed to your python system path if you install the package via pip, you can copy
-them from the installation path, for example in Mac:
+them from the installation path. You can get the installation path through::
+
+    python -c "import sphinxcontrib.excel_table; print sphinxcontrib.excel_table"
+
+for example in Mac:
 
 .. code-block:: bash
 
-    cp /Library/Python/2.7/site-packages/sphinxcontrib/excel_table/resources/_templates/layout.html path/to/your/project/_templates/
-    cp /Library/Python/2.7/site-packages/sphinxcontrib/excel_table/resources/_static/handsontable.full.min.js path/to/your/project/_static/
-    cp /Library/Python/2.7/site-packages/sphinxcontrib/excel_table/resources/_static/handsontable.full.min.css path/to/your/project/_static/
+    $ INSTALLATION_PATH=/Library/Python/2.7/site-packages/sphinxcontrib/excel_table/
+    $ cp $INSTALLATION_PATH/resources/_templates/layout.html path/to/your/project/_templates/
+    $ cp $INSTALLATION_PATH/resources/_static/handsontable.full.min.js path/to/your/project/_static/
+    $ cp $INSTALLATION_PATH/resources/_static/handsontable.full.min.css path/to/your/project/_static/
 
 or you can copy the resource files from source code directly.
 
