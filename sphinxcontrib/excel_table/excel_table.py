@@ -55,6 +55,8 @@ class ExcelTable(Directive):
         'selection': directives.unchanged,
         'overflow': directives.unchanged,
         'colwidths': directives.unchanged,
+        'row_header': directives.unchanged,
+        'col_header': directives.unchanged,
     }
 
     def run(self):
@@ -67,6 +69,8 @@ class ExcelTable(Directive):
         sheet_name = self.options.get('sheet')
         overflow = self.options.get('overflow', 'horizontal')
         colwidths = self.options.get('colwidths', 'undefined')
+        row_header = self.options.get('row_header', 'true')
+        col_header = self.options.get('col_header', 'true')
 
         if not file_path:
             msg = "file option is missing"
@@ -91,6 +95,8 @@ class ExcelTable(Directive):
           'sheet_name': sheet_name,
           'overflow': overflow,
           'colwidths': colwidths,
+          'row_header': row_header,
+          'col_header': col_header,
         }
 
         wb = load_workbook(filename=excel_file)

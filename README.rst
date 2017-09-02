@@ -137,3 +137,25 @@ function (if you want to set column width dynamically on each render). The defau
     .. excel-table::
        :file: path/to/file.xlsx
        :colwidths: 100
+
+**row_header (optional)**
+
+To decide whether to show the row header, the default is true, means to show the row header, you can
+set this to false to disable the row header.
+
+.. code-block::
+
+    .. excel-table::
+       :file: path/to/file.xlsx
+       :row_header: false
+
+**col_header (optional)**
+
+To decide whether to show the col header, the default is true, means to show the col header, you can
+set this to false to disable the col header.
+
+.. code-block::
+
+    .. excel-table::
+       :file: path/to/file.xlsx
+       :col_header: false
