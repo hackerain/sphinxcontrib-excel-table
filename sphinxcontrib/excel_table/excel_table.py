@@ -130,7 +130,7 @@ class ExcelTable(Directive):
         merged_cells = []
 
         for m in sheet.merged_cell_ranges:
-            start, end = m.split(":")
+            start, end = str(m).split(":")
 
             start_match = cell_regex.search(start)
             start_col, start_row = start_match.groups()
