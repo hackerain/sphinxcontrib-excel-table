@@ -20,3 +20,8 @@ Change log
 -----
 
 * Fix bug when openpyxl upgrade to 2.5.2
+
+1.0.4
+-----
+
+* Add python 3 support
