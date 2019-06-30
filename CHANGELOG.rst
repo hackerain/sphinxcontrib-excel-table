@@ -25,3 +25,10 @@ Change log
 -----
 
 * Add python 3 support
+
+1.0.6
+-----
+
+* Fix bug when calls to the same file multiple times chunks the table together
+* Fix bug date NameError when running in Python 3
+* Use the new merged_cells interface of openpyxl
