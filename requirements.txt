@@ -1,4 +1,4 @@
 docutils
 sphinx
-openpyxl==2.4.8
+openpyxl
 jinja2

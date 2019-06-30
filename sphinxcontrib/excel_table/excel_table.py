@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import datetime
 
 import docutils.core
 from docutils.parsers.rst import Directive
@@ -35,10 +36,10 @@ def az_to_dec(s):
 
 class DateTimeEncoder(json.JSONEncoder):
     def default(self, obj):
-        if isinstance(obj, date):
+        if isinstance(obj, datetime.date):
             date_string = obj.strftime('%Y-%m-%d')
             return date_string
-        if isinstance(obj, datetime):
+        if isinstance(obj, datetime.datetime):
             datetime_string = obj.strftime("%Y-%m-%d %H:%M:%S")
             return datetime_string
         return json.JSONEncoder.default(self, obj)
@@ -129,7 +130,7 @@ class ExcelTable(Directive):
         cell_regex = re.compile(r'([A-Z]+){1}([0-9]+){1}')
         merged_cells = []
 
-        for m in sheet.merged_cell_ranges:
+        for m in sheet.merged_cells:
             start, end = str(m).split(":")
 
             start_match = cell_regex.search(start)
