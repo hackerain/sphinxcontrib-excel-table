@@ -1,6 +1,6 @@
-<div id="excel-{{file_name}}-sheet-{{sheet_name}}" style="margin-bottom: 24px"></div>
+<div id="excel-{{file_name}}-sheet-{{sheet_name}}-icnt-{{icnt}}" style="margin-bottom: 24px"></div>
 <script>
-    var container = document.getElementById('excel-{{file_name}}-sheet-{{sheet_name}}');
+  var container = document.getElementById('excel-{{file_name}}-sheet-{{sheet_name}}-icnt-{{icnt}}');
     var hot = new Handsontable(container, {
     data: {{content}},
     preventOverflow: {{overflow}},

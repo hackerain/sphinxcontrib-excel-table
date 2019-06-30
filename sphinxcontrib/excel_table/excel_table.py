@@ -60,9 +60,13 @@ class ExcelTable(Directive):
         'col_header': directives.unchanged,
     }
 
-    def run(self):
+    def run(self, icnt=[0]):
         env = self.state.document.settings.env
         document = self.state.document
+
+        # Track the number of times the directive is called,
+        # send this to jinja template
+        icnt[0] += 1
 
         file_path = self.options.get('file')
         selection = self.options.get('selection')
@@ -98,6 +102,7 @@ class ExcelTable(Directive):
           'colwidths': colwidths,
           'row_header': row_header,
           'col_header': col_header,
+          'icnt': icnt[0],
         }
 
         wb = load_workbook(filename=excel_file)
