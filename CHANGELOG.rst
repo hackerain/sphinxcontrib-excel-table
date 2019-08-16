@@ -32,3 +32,8 @@ Change log
 * Fix bug when calls to the same file multiple times chunks the table together
 * Fix bug date NameError when running in Python 3
 * Use the new merged_cells interface of openpyxl
+
+1.0.7
+-----
+
+* Adds the ability to set the table width

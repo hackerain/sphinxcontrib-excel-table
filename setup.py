@@ -4,9 +4,9 @@ import sys
 PY2 = sys.version_info[0] == 2
 PY26 = PY2 and sys.version_info[1] < 7
 
-NAME = 'sphinxcontrib-excel-table'
+NAME = 'sphinxcontrib-excel-table-enhanced'
 AUTHOR = 'Guangyu Suo'
-VERSION = '1.0.6'
+VERSION = '1.0.7'
 EMAIL = 'yugsuo@gmail.com'
 LICENSE = 'Apache License'
 DESCRIPTION = (
