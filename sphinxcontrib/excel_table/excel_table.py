@@ -55,6 +55,7 @@ class ExcelTable(Directive):
         'rows': directives.unchanged,
         'selection': directives.unchanged,
         'overflow': directives.unchanged,
+        'tablewidth': directives.unchanged,
         'colwidths': directives.unchanged,
         'row_header': directives.unchanged,
         'col_header': directives.unchanged,
@@ -73,6 +74,7 @@ class ExcelTable(Directive):
         rows = self.options.get('rows')
         sheet_name = self.options.get('sheet')
         overflow = self.options.get('overflow', 'horizontal')
+        tablewidth = self.options.get('tablewidth', 'undefined')
         colwidths = self.options.get('colwidths', 'undefined')
         row_header = self.options.get('row_header', 'true')
         col_header = self.options.get('col_header', 'true')
@@ -99,6 +101,7 @@ class ExcelTable(Directive):
           'file_name': file_path,
           'sheet_name': sheet_name,
           'overflow': overflow,
+          'tablewidth': tablewidth,
           'colwidths': colwidths,
           'row_header': row_header,
           'col_header': col_header,
