@@ -37,3 +37,8 @@ Change log
 -----
 
 * Adds the ability to set the table width
+
+1.0.8
+-----
+
+* Fix REAEME about table width usage
