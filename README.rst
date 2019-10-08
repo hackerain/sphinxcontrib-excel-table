@@ -126,7 +126,7 @@ scrollbar in case where parent's width is narrower then table's width. The defau
        :file: path/to/file.xlsx
        :overflow: false
 
-**width (optional)**
+**tablewidth (optional)**
 
 Defines spreadsheet width in pixels. Accepts number, string (that will be converted to a number). The underlying
 spreadsheet implementation defaults to a width of 600px, you can change the value here if needed.
@@ -135,7 +135,7 @@ spreadsheet implementation defaults to a width of 600px, you can change the valu
 
     .. excel-table::
        :file: path/to/file.xlsx
-       :width: 1000
+       :tablewidth: 1000
 
 **colwidths (optional)**
 
