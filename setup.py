@@ -27,6 +27,7 @@ CLASSIFIERS = [
     'Topic :: Utilities',
     'Topic :: Software Development :: Libraries',
     'Programming Language :: Python',
+    'Framework :: Sphinx :: Extension',
     'Intended Audience :: Developers',
     'Programming Language :: Python :: 2.6',
     'Programming Language :: Python :: 2.7',
